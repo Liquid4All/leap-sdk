@@ -39,7 +39,7 @@ let package = Package(
         .binaryTarget(
             name: "LeapSDK",
             url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.0-SNAPSHOT/LeapSDK.xcframework.zip",
-            checksum: "f709a4a87d385181a9ae8a19599bf08e6aa924f4ae858a775f277ac1119f7f7a"
+            checksum: "698fafad87393f9143e5a9ccb99dcc03fb1b8f8d7f5584fbf546811a4be72db7"
         ),
         .binaryTarget(
             name: "LeapModelDownloader",
