@@ -39,22 +39,22 @@ let package = Package(
         .binaryTarget(
             name: "LeapSDK",
             url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.0-SNAPSHOT/LeapSDK.xcframework.zip",
-            checksum: "67e3b86e34cab4e85ea0bda4cea0ebda1121a25ab20ba9a86bb1628633a7e435"
+            checksum: "a713ddde096b538af0ea6dd5ab4d33ede59b93841ebc9ffaea95788c8a2d525a"
         ),
         .binaryTarget(
             name: "LeapModelDownloader",
             url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.0-SNAPSHOT/LeapModelDownloader.xcframework.zip",
-            checksum: "cc41ef209388cf5af3f6b62164f5f3c7aa84be4b2bfd7fefe6434b4505050335"
+            checksum: "f584c984422bc62019bdc58106d3eb9b9f04cfe66f8491b880353b3dcb430910"
         ),
         .binaryTarget(
             name: "LeapOpenAIClient",
             url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.0-SNAPSHOT/LeapOpenAIClient.xcframework.zip",
-            checksum: "2996cf435903a1dd45c6396f60872e97f027d526a4c397b9e03a3dfa9dbc0af8"
+            checksum: "85773ab7716b5239a4b089f16bcde2990b794da65e198198ab7c0a71b44836fd"
         ),
         .binaryTarget(
             name: "LeapUi",
             url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.0-SNAPSHOT/LeapUi.xcframework.zip",
-            checksum: "ae961c4d4c594c606fe7a240dcbe730103cecd27490bf81a398964d756a2fc14"
+            checksum: "d86df75df5f267c1e78177bdad9513e55acb892e35c2b40548d0b12250851b87"
         ),
         .macro(
             name: "LeapSDKConstrainedGenerationPlugin",
@@ -73,3 +73,4 @@ let package = Package(
         ),
     ]
 )
+
