@@ -38,23 +38,23 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "LeapSDK",
-            url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.0-2-SNAPSHOT/LeapSDK.xcframework.zip",
-            checksum: "72221065df1678387e8061a725886f16cbdc663b2d289d3035ff252005880beb"
+            url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.0-3-SNAPSHOT/LeapSDK.xcframework.zip",
+            checksum: "b2b0dec99310472378e72015fe18ef4351d5b3e2cf647f1ab1d83d557d351948"
         ),
         .binaryTarget(
             name: "LeapModelDownloader",
-            url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.0-2-SNAPSHOT/LeapModelDownloader.xcframework.zip",
-            checksum: "bf6feb8398a96f0400cae0642e07477683888ab75a64fa6b5d4cc44fe9619596"
+            url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.0-3-SNAPSHOT/LeapModelDownloader.xcframework.zip",
+            checksum: "16f620aa1700f715776d09f253abb12c526666148aa6774198317eafb681c906"
         ),
         .binaryTarget(
             name: "LeapOpenAIClient",
-            url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.0-2-SNAPSHOT/LeapOpenAIClient.xcframework.zip",
-            checksum: "1d6e5c1c5b672385a2ee0a5016b56880708ae0ecf2376d1f5d746d72aaa0e2e2"
+            url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.0-3-SNAPSHOT/LeapOpenAIClient.xcframework.zip",
+            checksum: "43430056144adab7eaa1585f17c1adcc9f387e71cb8f31a4e54210615a6eb198"
         ),
         .binaryTarget(
             name: "LeapUi",
-            url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.0-2-SNAPSHOT/LeapUi.xcframework.zip",
-            checksum: "b2cf394e662010fbfff34a87b9a0c27dc016cd80c0f0484a75f98801a4f046a6"
+            url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.0-3-SNAPSHOT/LeapUi.xcframework.zip",
+            checksum: "8564293e77ddc9fc2ac264dcfd35dfeb7d88da62a7ff5e084526fed151477d4d"
         ),
         .macro(
             name: "LeapSDKConstrainedGenerationPlugin",
