@@ -38,23 +38,23 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "LeapSDK",
-            url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.4.3/LeapSDK.xcframework.zip",
-            checksum: "447518d070b084b1a33fc48dfe078f4b23af4b5ae800b4bd247d2e9d45963467"
+            url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.4.4/LeapSDK.xcframework.zip",
+            checksum: "44cd62913f123e14253d10a3a6587a0cc8c061930cc4950bc2db48a9f411f37e"
         ),
         .binaryTarget(
             name: "LeapModelDownloader",
-            url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.4.3/LeapModelDownloader.xcframework.zip",
-            checksum: "78fb0b8a190ea16958462f4f7d479844774a6e76277f7592747bb33c0e0e3025"
+            url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.4.4/LeapModelDownloader.xcframework.zip",
+            checksum: "38a137e6c7e9d4985518a2aa3b6671d35f71764b66d843c51812e90ef88081dd"
         ),
         .binaryTarget(
             name: "LeapOpenAIClient",
-            url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.4.3/LeapOpenAIClient.xcframework.zip",
-            checksum: "79bc5443a1cce6fcd4c49c91eeb85727034aaca10d3ef69582c061989c3d9b70"
+            url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.4.4/LeapOpenAIClient.xcframework.zip",
+            checksum: "cc2471507c9fbac0de05681c6ba5a615eed3053c3d0bc3d0e03c31a41b786e1c"
         ),
         .binaryTarget(
             name: "LeapUi",
-            url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.4.3/LeapUi.xcframework.zip",
-            checksum: "121fff636ce280f94466895e6d60b0d7f93717724b2a5d4e5ef551cccec39814"
+            url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.4.4/LeapUi.xcframework.zip",
+            checksum: "8b3a4d989078503f482624021e6f9d83e471be29dcc752fcdde654d0e8c2c560"
         ),
         .macro(
             name: "LeapSDKConstrainedGenerationPlugin",
