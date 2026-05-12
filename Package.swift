@@ -38,23 +38,23 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "LeapSDK",
-            url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.4.5/LeapSDK.xcframework.zip",
-            checksum: "ae9ecddbe5dc226ddd4ec8fe42178b721faeab71a20b3f14efceaae5a2495b7e"
+            url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.5/LeapSDK.xcframework.zip",
+            checksum: "b1511b47f593b25199b6125095bafa84183c2493a515ad6a9b77094e633cb7b9"
         ),
         .binaryTarget(
             name: "LeapModelDownloader",
-            url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.4.5/LeapModelDownloader.xcframework.zip",
-            checksum: "eeee13f4c464cad32c998865041932985fcbac515a77f95ad5460a6f2df74b1e"
+            url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.5/LeapModelDownloader.xcframework.zip",
+            checksum: "8329831f74dbad8ae1bd7ff70f9b290dd3d4daa8b5a6032e90fc3194e1e2606f"
         ),
         .binaryTarget(
             name: "LeapOpenAIClient",
-            url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.4.5/LeapOpenAIClient.xcframework.zip",
-            checksum: "b661059af8bfb086931099f8fac9f54e957272d5d6bbc9dd36e3e154fddf8222"
+            url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.5/LeapOpenAIClient.xcframework.zip",
+            checksum: "4b8b641f5ce97818cbfa23b53bcfdd9361a44e3ae44146effcdabfc5ad6820a5"
         ),
         .binaryTarget(
             name: "LeapUi",
-            url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.4.5/LeapUi.xcframework.zip",
-            checksum: "19a4dadff51caee252c87e4e9ecd9fe464dd06bba3d3f693a8fc8531017fa859"
+            url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.5/LeapUi.xcframework.zip",
+            checksum: "c28cb41121a461a8b45b0d697e27412a22551211ea70b86554ba3c4867b93a5a"
         ),
         .macro(
             name: "LeapSDKConstrainedGenerationPlugin",
