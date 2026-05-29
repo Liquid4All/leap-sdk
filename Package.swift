@@ -38,23 +38,23 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "LeapSDK",
-            url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.8/LeapSDK.xcframework.zip",
-            checksum: "96ced8bf96121edf7fd3912fc11d667a7a069adc859cbd838f63f887614837fd"
+            url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.9/LeapSDK.xcframework.zip",
+            checksum: "1fdea67fe208ee56db3aba4313809b03a469e6520a49a855c212ebcfef4cea2e"
         ),
         .binaryTarget(
             name: "LeapModelDownloader",
-            url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.8/LeapModelDownloader.xcframework.zip",
-            checksum: "176a99b5ec79af901b95f24d4577117692a0d930554ce8b366f252e4a08a6dd3"
+            url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.9/LeapModelDownloader.xcframework.zip",
+            checksum: "41bc9a67b1a70c6b5bc42cc1433feb4c346b9f3ecb6bc831eae4ae8f81cdb2a0"
         ),
         .binaryTarget(
             name: "LeapOpenAIClient",
-            url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.8/LeapOpenAIClient.xcframework.zip",
-            checksum: "c81446084a06193f6e77a7c41eeaeb2c503b5c319b99635e13b88d8d235b25ed"
+            url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.9/LeapOpenAIClient.xcframework.zip",
+            checksum: "fabdc0ebc3f355676271f6811bfe736af2b4486b49afdb344d2596108cb25a8e"
         ),
         .binaryTarget(
             name: "LeapUi",
-            url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.8/LeapUi.xcframework.zip",
-            checksum: "92be54930ca31f8b6e3841622c3e9ec1d86a561e676ab15e7db3202216937fe8"
+            url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.9/LeapUi.xcframework.zip",
+            checksum: "72247e66ce53ba9439f75af339540570172edd7f26ad2621db022889e23af696"
         ),
         .macro(
             name: "LeapSDKConstrainedGenerationPlugin",
