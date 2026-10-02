@@ -4,6 +4,13 @@
 import CompilerPluginSupport
 import PackageDescription
 
+// The inference engine ships as its own top-level framework (its own binaryTarget), listed in every
+// product that needs it, so SPM embeds and code-signs it with the consumer's identity on device
+// (Xcode "Embed & Sign" never re-signs dylibs nested inside another framework). See
+// Liquid4All/leap-android-sdk#281.
+let releaseBase =
+    "https://github.com/Liquid4All/leap-sdk/releases/download/v0.11.0-SNAPSHOT"
+
 let package = Package(
     name: "LeapSDK",
     platforms: [
@@ -13,11 +20,11 @@ let package = Package(
     products: [
         .library(
             name: "LeapSDK",
-            targets: ["LeapSDK"]
+            targets: ["LeapSDK", "inference_engine"]
         ),
         .library(
             name: "LeapModelDownloader",
-            targets: ["LeapModelDownloader"]
+            targets: ["LeapModelDownloader", "inference_engine"]
         ),
         .library(
             name: "LeapOpenAIClient",
@@ -25,7 +32,7 @@ let package = Package(
         ),
         .library(
             name: "LeapUI",
-            targets: ["LeapUi", "LeapSDK"]
+            targets: ["LeapUi", "LeapSDK", "inference_engine"]
         ),
         .library(
             name: "LeapSDKMacros",
@@ -38,23 +45,29 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "LeapSDK",
-            url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.13-SNAPSHOT/LeapSDK.xcframework.zip",
-            checksum: "99abbed6967de43dfa2b3ad03350f4146bf9ab9194a2fbc719d239066e6becc3"
+            url: "\(releaseBase)/LeapSDK.xcframework.zip",
+            checksum: "f837346f81c73ac9f72e5cb115a9b4087a9155ae743cdc365b702361414343ac"
         ),
         .binaryTarget(
             name: "LeapModelDownloader",
-            url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.13-SNAPSHOT/LeapModelDownloader.xcframework.zip",
-            checksum: "7ee06788b38d2612b981d6fa3a4d0f7ca09304244328c5fdcd7c373529353962"
+            url: "\(releaseBase)/LeapModelDownloader.xcframework.zip",
+            checksum: "8e08d69033f22615d49936ebd2cc9ee4bef9442d499cf54ff45243c9bbf29f24"
         ),
         .binaryTarget(
             name: "LeapOpenAIClient",
-            url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.13-SNAPSHOT/LeapOpenAIClient.xcframework.zip",
-            checksum: "eab9ba0d11dc040075482d60d8fe8b418c1a028e4dfaedaf46ba07c6e54be349"
+            url: "\(releaseBase)/LeapOpenAIClient.xcframework.zip",
+            checksum: "9f73ae6de8779e65e349e7668c6d15989eeb11622f8644dec7877577fa0a6a17"
         ),
         .binaryTarget(
             name: "LeapUi",
-            url: "https://github.com/Liquid4All/leap-sdk/releases/download/v0.10.13-SNAPSHOT/LeapUi.xcframework.zip",
-            checksum: "0084b4956cf6eb9af3b0a6da71056051f20677c6afa8145b3aa46801ba40b2aa"
+            url: "\(releaseBase)/LeapUi.xcframework.zip",
+            checksum: "5455a094af42ffef21d452d130cfcd3c672205af5f483393c4198fa7b6661fa2"
+        ),
+        // Inference-engine runtime, shipped as a sibling framework (see comment above).
+        .binaryTarget(
+            name: "inference_engine",
+            url: "\(releaseBase)/inference_engine.xcframework.zip",
+            checksum: "bd8f4ca176afc87713f48d49e24301090882e8a10761b476ebcf8ee2cced2ba2"
         ),
         .macro(
             name: "LeapSDKConstrainedGenerationPlugin",
