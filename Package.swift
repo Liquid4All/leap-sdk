@@ -9,7 +9,7 @@ import PackageDescription
 // (Xcode "Embed & Sign" never re-signs dylibs nested inside another framework). See
 // Liquid4All/leap-android-sdk#281.
 let releaseBase =
-    "https://github.com/Liquid4All/leap-sdk/releases/download/v0.11.0-1-SNAPSHOT"
+    "https://github.com/Liquid4All/leap-sdk/releases/download/v0.11.0-2-SNAPSHOT"
 
 let package = Package(
     name: "LeapSDK",
@@ -46,28 +46,28 @@ let package = Package(
         .binaryTarget(
             name: "LeapSDK",
             url: "\(releaseBase)/LeapSDK.xcframework.zip",
-            checksum: "7eb8b7b75ef743df6385c95d6ec5071817e0eeae50bf6d81066797df8ef05e19"
+            checksum: "5d68e7059470c6a22ebabd149441f81f75387b72bc614948548b76bb6ea3f3ca"
         ),
         .binaryTarget(
             name: "LeapModelDownloader",
             url: "\(releaseBase)/LeapModelDownloader.xcframework.zip",
-            checksum: "a0d52c20ca308c8163b6a407a3d74ffd692a234300b7e05f6f2dc9940460452b"
+            checksum: "d29ea00aa112e4df64774a5fcb8b75fd4f66db5bee43e731b00be3f33f6074ec"
         ),
         .binaryTarget(
             name: "LeapOpenAIClient",
             url: "\(releaseBase)/LeapOpenAIClient.xcframework.zip",
-            checksum: "e8d221f88924be029ab9489f44ad24c5f4aa5f79f81380e622176980922e4324"
+            checksum: "42c4dda5fa84280966ce204754dd8e8b30657391a71f1393fb4a8c037c785540"
         ),
         .binaryTarget(
             name: "LeapUi",
             url: "\(releaseBase)/LeapUi.xcframework.zip",
-            checksum: "db7ddeb371e658760135bad7e5cbed4bebb2f266dad2a4abf4d89bb7f0de02a6"
+            checksum: "55adeff421ff0d5711381fec38534be13684410dccd3c5404152f4cb8afad3a6"
         ),
         // Inference-engine runtime, shipped as a sibling framework (see comment above).
         .binaryTarget(
             name: "inference_engine",
             url: "\(releaseBase)/inference_engine.xcframework.zip",
-            checksum: "298bd46c46e685e41223e95d0a47640d887c9852781664688dbccdb16e02e1a7"
+            checksum: "b37c71d586014dbc2526c2fe1e9217513719ac6763c3acbf1998c03273f9280d"
         ),
         .macro(
             name: "LeapSDKConstrainedGenerationPlugin",
